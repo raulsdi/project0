@@ -1,0 +1,192 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+body {
+  color: #708D81; }
+
+nav {
+  border-bottom: 1px solid black; }
+
+.crumbs ol {
+  list-style-type: none;
+  padding-left: 0; }
+
+.crumb {
+  display: inline-block; }
+
+.crumb a::after {
+  display: inline-block;
+  color: #001427;
+  content: '>';
+  font-size: 80%;
+  font-weight: normal;
+  padding: 0 3px; }
+
+button:hover {
+  background-color: #001427; }
+
+@media (min-width: 1000px) {
+  body {
+    background-color: #F4D58D; } }
+@media (max-width: 999px) {
+  body {
+    background-color: #F4D58D; } }
+div {
+  font-size: 18px; }
+  div p {
+    color: #F4D58D; }
+  div ul {
+    color: #F4D58D; }
+
+::selection {
+  color: #BF0603;
+  background: #001427; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #708D81; }
+
+/* STRUCTURE */
+.wrapper {
+  padding: 5px;
+  max-width: 960px;
+  width: 95%;
+  margin: 20px auto; }
+
+header {
+  padding: 0 15px; }
+
+.columns {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 5px 0; }
+
+.column {
+  flex: 1;
+  margin: 2px;
+  padding: 10px;
+  justify-content: center; }
+  .column:first-child {
+    margin-left: 0; }
+  .column:last-child {
+    margin-right: 0; }
+
+footer {
+  padding: 0 15px; }
+
+@media screen and (max-width: 980px) {
+  .columns .column {
+    margin-bottom: 5px;
+    flex-basis: 40%; }
+    .columns .column:nth-last-child(2) {
+      margin-right: 0; }
+    .columns .column:last-child {
+      flex-basis: 100%;
+      margin: 0; } }
+@media screen and (max-width: 680px) {
+  .columns .column {
+    flex-basis: 100%;
+    margin: 0 0 5px 0; } }
+.navigation {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  background: #708D81; }
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: #FAE9A0; }
+
+.navigation a:hover {
+  background: #8D0801; }
+
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around; } }
+@media all and (max-width: 600px) {
+  .navigation {
+    flex-flow: column wrap;
+    padding: 0;
+    width: 100%; }
+
+  .navigation a {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+
+  .navigation li:last-of-type a {
+    border-bottom: none; } }
+.sidenav {
+  height: 100%;
+  /* Full-height: remove this if you want "auto" height */
+  width: 160px;
+  /* Set the width of the sidebar */
+  position: fixed;
+  /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 0;
+  /* Stay on top */
+  top: 0;
+  /* Stay at the top */
+  left: 0;
+  background-color: #708D81;
+  /* Black */
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 50px; }
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #FAE9A0;
+  display: block; }
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #BF0603; }
+
+/* Style page content */
+.main {
+  margin-left: 160px;
+  /* Same as the width of the sidebar */
+  padding: 0px 10px; }
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px; }
+
+  .sidenav a {
+    font-size: 18px; } }
+.btn {
+  display: flex;
+  justify-content: center;
+  background-color: #BF0603;
+  border: 0px;
+  position: center;
+  margin-left: auto;
+  margin-right: auto; }
+
+#3 {
+  background-color: #FAE9A0; }
+
+h1 {
+  text-align: center;
+  color: #708D81; }
+
+ul > li {
+  color: #708D81; }
+
+#text {
+  text-align: center;
+  color: #708D81; }
+
+/*# sourceMappingURL=styles.css.map */
